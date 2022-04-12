@@ -1,0 +1,602 @@
+* { 
+    margin: 0; 
+    padding: 0;
+ }
+
+
+ /*/////////////////////////////////////Estilos generales para todas nuestras paginas////////////////////////////////*/
+
+/*header de blog, contacto, nostros, servicios*/
+
+.cabecera {
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+.cabecera a{
+    text-decoration: none;
+}
+
+.cabecera .logotipo {
+    margin: 0px auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.cabecera .logotipo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+.cabecera h1{
+    text-align: center;
+    font-size: large;
+    font-size: 40px;
+    color: #700b0b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333;
+}
+
+.cabecera h1 a {
+    color: #700b0b;
+}
+
+/*barra de navegacion para todas las paginas de nuestro sitio web*/
+
+
+.formulario{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, #404040, #000000);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px #808080;
+    float: right;
+}
+
+.formulario ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 500px;
+}
+
+.formulario ul img {
+    display: flex;
+    text-align: right;
+    margin: 0px auto;
+    width: 40px;
+}
+
+.formulario ul li{
+    display:inline;
+    line-height: 40px;
+    border-right: 1px solid #808080;
+
+}
+
+.formulario ul li a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+} 
+/* Fin barra de navegacion*/
+
+/*//////////////////////////////////////Fin estilos generales para todas nuesras paginas///////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////// INCIO DE INDEX.HTML//////////////////////////////////////////////////////*/
+
+/*pagina principal,index.html, titulo y fondo imagen*/
+.CajaPrincipal {
+    height: 700px;
+    width: 100%;
+    background-image: url(img/Principal.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.CajaPrincipal h1{
+    margin-left: 60%;
+}
+/* espacio de servicios index.html*/
+
+.cajaServicios{
+    width: 100%;
+    text-align:center;
+}
+
+.cajaServicios h2 {
+     margin-top: 60px;
+     margin-bottom: 60px;
+     font-size: 30px;
+    text-align:center;
+    color: #333;
+}
+
+.cajaServiciosSegunda {
+    display: inline-block;
+    text-align:center;
+    width: 350px;
+    height: 500px;
+    padding-left: 30px;
+    padding-right: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cajaServiciosSegunda img{
+    width: 300px;
+    height: 330px;
+    margin: 20px;
+    background-color:#700b0b;
+}
+
+.margenImg {
+    width: 360px;
+    height: 500px;
+    margin-bottom: 60px;
+    background-color: #700b0b;
+}
+
+/*fin caja de servicios*/
+
+/* espacio nuestro equipo inicio*/
+
+.cajaEquipo {
+    width: 100%;
+    display: inline-block;
+}
+.cajaEquipo h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+
+}
+
+.cajaEquipoSecundaria{
+    display: inline-block;
+    text-align: center;
+    text-decoration: dashed;
+    width: 275px;
+    height: 350px;
+    margin: 50px;
+    margin-bottom: 20px solid #333;
+}
+
+.cajaEquipoSecundaria img{
+    width: 300px;
+    height: 200px;
+}
+
+.subrayadoImg {
+    width: 300px;
+    height: 20px;
+    background-color: #700b0b;
+}
+
+ /*fin caja nuestro equipo*/
+
+ /*estilos caja clientes*/
+
+.cajaClientes {
+    text-align: center;
+    text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: white;
+    width: 100%;
+}
+.cajaClientes img {
+    height: 200px;
+    width: 370px;
+
+}
+ /*fin caja de clientes*/
+
+ /*////////////////////////////////////////////////////Fin index.html//////////////////////////////////////*/
+
+/*//////////////////////////////////////////////Inicio estilos servicios.html/////////////////////////////*/
+
+ .gridPrincipal .principalDesarrollo {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 200px 200px;
+     grid-gap: 40px
+ }
+ .gridPrincipal .principalDesarrollo .primerDiv{
+    grid-column: 2/3;
+    padding: 10px ;
+    text-align: center;
+ }
+ .gridPrincipal .principalDesarrollo .primerDiv h2{
+    text-align: center;
+    font-size: large;
+    font-size: 25px;
+    color: #700b0b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333;
+ }
+
+.gridPrincipal .principalDesarrollo .segundoDiv {
+    grid-template-columns: 1/3;
+    grid-row: 2/3;
+}
+.gridPrincipal .principalDesarrollo .tercerDiv {
+    grid-template-columns: 2/3;
+    grid-row: 2/3;
+}
+
+.gridPrincipal .principalDesarrollo .cuartoDiv {
+    grid-template-columns: 3/3;
+    grid-row: 2/3;
+}
+
+/*///////////////////////////////////// Inicio estilos para nostros.html//////////////////////////////////*/
+
+.allNosotros {
+    padding: 40px 150px;
+    grid-template-rows: 300px, 300px, 300px;
+    
+}
+
+.allNosotros img{
+    width: 500px;
+    height: 350px;
+}
+
+.qienesSomosPrincipal{
+    display: flex;
+    padding: 100px;
+}
+.quienesSomosImg{
+   padding: 40px;
+}
+.subrayado {
+    background-color: #333;
+    padding: 2px 10px;
+}
+.quienesSomos { 
+padding: 40px;
+}
+.comoTrabajamosPrincipal{
+    display: flex;
+    padding: 100px;
+}
+
+.comoTrabajamosImg {
+    grid-row: 2/3;
+}
+
+.comoTrabajamos{
+    grid-row: 2/3;
+}
+.porqueMarketingPrincipal{
+    display: flex;
+    padding: 100px;
+}
+
+.porqueMarketingImg{
+    grid-row: 3/3;
+    padding: 40px;
+}
+.porqueMarketing{
+    grid-row: 3/3;
+}
+
+
+
+
+/*///////////////////////////////////// Inicio estilos para contacto.html//////////////////////////////////*/
+
+
+.general {
+    display: grid;
+    grid-template-columns: 450px, 450px;
+    grid-gap: 40px;
+    padding: 40px;
+
+}
+
+.principalContacto{
+    display: flex;
+    padding: 40px;
+}
+
+.imagen img{
+    width: 98%;
+}
+
+.imagen{
+    width: 60%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.mensaje h2{
+    padding: 40px;
+    text-align: center;
+    font-size: large;
+    font-size: 24px;
+    color: #700b0b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333;
+}
+
+
+.mensaje {
+    grid-column: 2/2;
+    width: 40%;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.tituloContacto{
+    text-align: center;
+    font-size: large;
+    font-size: 24px;
+    color: #700b0b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+.contacto {
+    background: #c1c1c1;
+    padding: 50px 0;
+}
+
+
+.contacto .contenedorContacto .formContacto{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /*responsive*/
+    padding: 60px;
+}
+
+.contacto .contenedorContacto .nombre, .correoElectronico, .phone, .serviciosInteres, .consultar{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #333;
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    transition: all 240ms ease;
+    margin-bottom: 20px;
+}
+
+.contacto .nombre, .correoElectronico, .phone, .serviciosInteres{
+    width: 46%;
+    margin-bottom: 20px;
+}
+
+.contacto .serviciosInteres{
+    width: 49%;
+}
+
+.contacto .consultar{
+    width: 96%;
+    max-width: 96%;
+    min-width: 96%;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.contacto .nombre:focus, .serviciosInteres:focus, .correoElectronico:focus, .phone:focus, .consultar:focus{
+    border-bottom: 3px solid #700b0b;
+}
+
+.contacto .btn, .rst{
+    margin: auto;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border:none;
+    background: none;
+    background-color: #700b0b;
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.contacto .btn:hover, .rst:hover {
+    background-color: #410303;
+    border: unset;
+}
+
+    
+
+
+
+ /* inicio de footer para todas las paginas de nuestro sitio web*/
+
+footer{
+    height: 80px;
+    background-color: #333;
+}
+
+footer img{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    background-color: #333;
+}
+
+
+.cajaLista{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.cajaLista ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 500px;
+}
+
+.cajaLista ul li{
+    display:inline;
+    line-height: 40px;
+    border-right: 1px solid #808080;
+
+}
+
+.cajaLista ul li a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.social{
+    text-align: end;
+    margin-right: 43%;
+}
+
+.topfix {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+}
+
+.copyright {
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+
+/* fin de footer*/
+
+/*//////////////////////////////Inicio responsive/////////////////////*/
+
+/*menu de navegacion*/
+@media (min-width: 600px) {
+    .menuu {
+        display: none;
+      }
+      .burger {
+          display: none;
+      }
+    
+}
+@media (max-width: 600px) {
+      .lista1{
+        display:none;
+      }
+      
+      .menuu:checked   ~ul{
+        display:block;
+      }
+      
+      .menuu {
+        display: none;
+      }
+      
+      .burger {
+        color: white;
+        box-sizing: border-box;
+        display:block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        text-align:right;
+        user-select: none;
+      }
+      .burger:hover{
+        transform: scale(1.5);
+        transition: 2s;
+        cursor: pointer;
+      }
+      
+       .menuu:checked  label {
+        background: lightgrey;
+      }
+      
+      .lista1{
+        margin-top:0;
+        padding: 0;
+        width: 100%;
+      }
+      
+      
+      .listas{
+          width: 100%;
+        display: block;
+        background: #700b0b;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+      }
+      
+      .listas:hover {
+        filter: brightness(110%);
+      }
+    }
+/* inicio contacto.html responsive */
+
+
+    @media (max-width: 800px) {
+
+        .general {
+            display: grid;
+            grid-template-rows: 100%  100%;
+        }
+
+        .principalContacto {
+            display:block;
+        }
+
+        .imagen {
+            width: 100%;
+            grid-row: 1/2;
+        }
+
+        .imagen img {
+            width: 100%;
+        }
+
+        .mensaje{
+            grid-row: 2/2;
+            width: 100%;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+        }
+
+    }
+
+/*Fin contacto.html responsive*/    
