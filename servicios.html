@@ -4,113 +4,254 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="img/Fav.jpg"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>SevillaMD</title>
 </head>
 <body>
-        <!--Cabecera-->
-<header class="cabecera">
-    <div class="logotipo">
-       <img src="img/logo.png" alt="Sevillamd">
-    </div>     
-      
-    <h1>
-         <a href="index.html">SevillaMD</a>
-    </h1>
-       
-</header>
-<!--Fin de cabecera-->
    <!---Barra superior-->
-   <header>
-    <nav class="formulario">
-        <input type="checkbox" id="menu" class="menuu">
-        <label for="menu" class="burger"> ☰ </label>
-        <ul class="lista1">
-            <li class="listas"><a href="index.html">Inicio</a></li>
-            <li class="listas"><a href="nosotros.html">Sobre nosotros</a></li>
-            <li class="listas"><a href="servicios.html">servicios</a></li>
-            <li class="listas"><a href="blog.html">Blog</a></li>
-            <li class="listas"><a href="contacto.html">Contacto</a></li>
+   <!---Barra superior-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="SevillaMD" width="80px">SevillaMD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="nosotros.html">Sobre  nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Soluciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Diseño y desarrollo web</a></li>
+              <li><a class="dropdown-item" href="#">Social media y seo</a></li>
+              <li><a class="dropdown-item" href="#">Medios audiovisuales</a></li>
+            </ul>
+          </li>
         </ul>
-    </nav>
-</header>
+      </div>
+    </div>
+  </nav>
 <!---fin barra superior-->
-<!--Inicio de planes que ofrece la empresa-->,
-<div class="gridPrincipal">
-  <div class="principalDesarrollo">
-    <div class="primerDiv">
+<!--Inicio de planes que ofrece la empresa-->
+
+
+    <div  class="titulosEncabezados" >
     <h2>Diseño y desarrollo web</h2>
     <p>Creamos experiencias únicas para convertir el tráfico de tu web en potenciales clientes</p>
     </div>
-     <div class="segundoDiv">
-        <h4>Web personalizada</h4>
-        <p>Ya no es necesario ir a buscar a los clientes, ellos pueden ser atraídos a tu marca.
-            Una Web Site es clave para mejorar la posición en los motores de búsqueda, con lo que aparecerás adelante en las búsquedas de Google, también da credibilidad y respaldo a tu marca, creando una interacción con los posibles compradores donde pueden hablar contigo, solicitando producto o servicios</p>
-        <a href="contacto.html">Quiero una web</a>
-     </div>
-     <div class="tercerDiv">
-        <h4>Landing page</h4>
-        <p>Una Landing Page puede ser un gran aliado para atraer visitas a tu página y ventas. Si esta, se encuentra correctamente conformada, y tiene un aspecto visual llamativo, probablemente generará que el público se involucre con tu marca.
-            Esta página será el primera pantallazo de los posibles clientes con nuestra marca, y su buena composición finalizará en suscripciones, consultas o ventas a favor de tu marca.</p>
-            <a href="contacto.html">Quiero una landing page</a>
-     </div>
-     <div class="cuartoDiv">
-        <h4>E-commerce</h4>
-        <p>Comprar o vender durante todo el día, algo que solo era posible sin descanso e incurriendo en enormes gastos, ahora es una posibilidad palpable a través de Internet. E-commerce, tu negocio estará abierto las 24 horas, dirigiéndose a un público específico con una comunicación que lo capte rápidamente, y pudiendo crear campañas de comunicación a bajo costo especializadas.</p>
-        <a href="contacto.html">Quiero un e-commerce</a>
-     </div>
-  </div>
-  <div>
-    <div>
-    <h2>social media y SEO</h2>
-    <p>Haz que tu marca llegue a los potenciales consumidores de manera ágil y orgánica</p>
+
+    <main>
+
+        <div class="contenedorContenedores">
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/webdesing.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Diseñamos un sitio web para tu negocio</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>Web personalizada</h1>
+                            <p>Ya no es necesario ir a buscar a los clientes, ellos pueden ser atraídos a tu marca.
+                                Una Web Site es clave para mejorar la posición en los motores de búsqueda, con lo que aparecerás adelante en las búsquedas de Google, también da credibilidad y respaldo a tu marca, creando una interacción con los posibles compradores donde pueden hablar contigo, solicitando producto o servicios</p>
+                            <input type="button" value="Quiero una web">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/landing.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Landing page, una gran aliada para traer visitas a tu pagina</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>Landing page</h1>
+                            <p>Una Landing Page puede ser un gran aliado para atraer visitas a tu página y ventas. Si esta, se encuentra correctamente conformada, y tiene un aspecto visual llamativo, probablemente generará que el público se involucre con tu marca.
+                                Esta página será el primera pantallazo de los posibles clientes con nuestra marca, y su buena composición finalizará en suscripciones, consultas o ventas a favor de tu marca.</p>
+                            <input type="button" value="Quiero una landing page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/shop.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Creemos un e-commerce al alcance de todo el mundo</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>E-commerce</h1>
+                            <p>Comprar o vender durante todo el día, algo que solo era posible sin descanso e incurriendo en enormes gastos, ahora es una posibilidad palpable a través de Internet. E-commerce, tu negocio estará abierto las 24 horas, dirigiéndose a un público específico con una comunicación que lo capte rápidamente, y pudiendo crear campañas de comunicación a bajo costo especializadas.</p>
+                            <input type="button" value="Quiero una tienda online">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="titulosEncabezados">
+        <h2>social media y SEO</h2>
+        <p>Haz que tu marca llegue a los potenciales consumidores de manera ágil y orgánica</p>
     </div>
-     <div>
-         <h4>Facebook ads</h4>
-         <p>Las personas pasan gran parte de su día dentro de redes sociales, y tu empresa debe aprovecharlo. Las redes son uno de los medios más efectivos y menos costosos de comunicación.
-            Facebook Ads, permite una segmentación exhaustiva de tu mercado y brinda un control total de tus anuncios. De este modo, se puede accionar a partir de objetivos claros y detallados.
-            Es importante contar con profesionales que entiendan esta plataforma y estén familiarizados. Así, con un trabajo en conjunto rápidamente se verá mayor participación en el mercado y más interacción con el público.</p>
-         <a href="contacto.html">Quiero anunciar en redes</a>
-     </div>
-     <div>
-        <h4>Google ads</h4>
-        <p>Google es el dueño del 95% de las búsquedas en la web. Su herramienta, Google Ads, te ayuda a incrementar tus ventas haciendo que más gente ingrese a tu sitio web. Esto aumenta los clientes potenciales y el conocimiento de tu marca en el mapa mental de los consumidores.
-            Google Ads es un método publicitario que tienen como fin aumentar la conexión con tus clientes y brinda, a su vez, múltiples herramientas para que puedas observar el rendimiento de tus anuncios para mantenerte al tanto de los cambios día a día</p>
-        <a href="contacto.html">Quiero anunciar con google</a>
+
+
+    <main>
+
+        <div class="contenedorContenedores">
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/webdesing.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Diseñamos un sitio web para tu negocio</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>Web personalizada</h1>
+                            <p>Ya no es necesario ir a buscar a los clientes, ellos pueden ser atraídos a tu marca.
+                                Una Web Site es clave para mejorar la posición en los motores de búsqueda, con lo que aparecerás adelante en las búsquedas de Google, también da credibilidad y respaldo a tu marca, creando una interacción con los posibles compradores donde pueden hablar contigo, solicitando producto o servicios</p>
+                            <input type="button" value="Quiero una web">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/landing.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Landing page, una gran aliada para traer visitas a tu pagina</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>Landing page</h1>
+                            <p>Una Landing Page puede ser un gran aliado para atraer visitas a tu página y ventas. Si esta, se encuentra correctamente conformada, y tiene un aspecto visual llamativo, probablemente generará que el público se involucre con tu marca.
+                                Esta página será el primera pantallazo de los posibles clientes con nuestra marca, y su buena composición finalizará en suscripciones, consultas o ventas a favor de tu marca.</p>
+                            <input type="button" value="Quiero una landing page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/shop.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Creemos un e-commerce al alcance de todo el mundo</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>E-commerce</h1>
+                            <p>Comprar o vender durante todo el día, algo que solo era posible sin descanso e incurriendo en enormes gastos, ahora es una posibilidad palpable a través de Internet. E-commerce, tu negocio estará abierto las 24 horas, dirigiéndose a un público específico con una comunicación que lo capte rápidamente, y pudiendo crear campañas de comunicación a bajo costo especializadas.</p>
+                            <input type="button" value="Quiero una tienda online">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <div class="titulosEncabezados">
+        <h2>Comunicacion visual</h2>
+        <p>experiencias únicas para convertir el tráfico de tu web en potenciales clientes</p> 
     </div>
-    <div>
-        <h4>SEO y SEM</h4>
-        <p>Este conjunto hará que las personas lleguen a tu página, que tengas más presencia en los motores de búsqueda y que tengas el potencial de realizar un mayor número de ventas.
-            Una buena estrategia de marketing digital que mezcle SEO y SEM permitirá que tu marca se posicione constantemente en las búsquedas de Google, obteniendo más visitas y mejores resultados. </p>
-        <a href="contacto.html">Quiero aparecer en los buscadores</a>
-    </div>
-  </div>
-  <div>
-    <div>
-    <h2>Comunicacion visual</h2>
-    <p>experiencias únicas para convertir el tráfico de tu web en potenciales clientes</p> 
-    </div>
-    <div>
-        <h4>Logo</h4>
-        <p>La imagen de tu empresa ante el mundo es tu logo. Es su sello, la representación de la marca. Es crucial darle la importancia que merece, no solo al diseñarlo en su creación sino a modificarlo y actualizarlo a través del tiempo, haciéndolo amigable con los usuarios y atractivo para ellos.
-            Las audiencias se transforman con el paso del tiempo, y tu logo no debe quedarse atrás. El equipo de profesionales de Oddel, en conjunto con tus ideas, expectativas y lo que busques transmitir, se encargarán de estudiar tu target y todos aquellos factores de influencia para determinar cuál será el mejor diseño para tu logo.</p>
-        <a href="contacto.html">Quiero mi logo</a>
-    </div>
-    <div>
-        <h4>Merchandising</h4>
-        <p>Haz que tu marca llame la atención en todo sentido. Promocionar y vender tus productos con Merchandising es una gran estrategia.
-            Estas acciones atraen a los clientes hacia tu marca y los hace más cercano a ellas, así se obtiene un mayor flujo de ventas. En Oddel, nos encargamos de desarrollar todos los elementos necesarios para que tu estrategia de Merchandising sea óptima y acapare la atención del mercado, saliendo de los márgenes convencionales y creando beneficios para tu marca.</p>
-        <a href="contacto.html">quiero tener Merchandising</a>
-    </div>
-    <div>
-        <h4>Video animacion y foto</h4>
-        <p>Hay diversas formas de ser disruptivo en el mundo digital, y una de ellas, es hacerlo con acciones de comunicación de alto impacto con mensajes contundentes. Esto se puede transmitir con videos e imágenes.
-            Darle mayor vuelo a tu organización, comunicar sus valores, productos y formas de trabajo con elementos audiovisuales atraerán público, generará interacción y potenciará a tu marca.</p>
-        <a href="contacto.html">Quiero este servicio</a>
-    </div>
-  </div>
-</div>
+
+
+    <main>
+
+        <div class="contenedorContenedores">
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/webdesing.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Diseñamos un sitio web para tu negocio</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>Web personalizada</h1>
+                            <p>Ya no es necesario ir a buscar a los clientes, ellos pueden ser atraídos a tu marca.
+                                Una Web Site es clave para mejorar la posición en los motores de búsqueda, con lo que aparecerás adelante en las búsquedas de Google, también da credibilidad y respaldo a tu marca, creando una interacción con los posibles compradores donde pueden hablar contigo, solicitando producto o servicios</p>
+                            <input type="button" value="Quiero una web">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/landing.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Landing page, una gran aliada para traer visitas a tu pagina</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>Landing page</h1>
+                            <p>Una Landing Page puede ser un gran aliado para atraer visitas a tu página y ventas. Si esta, se encuentra correctamente conformada, y tiene un aspecto visual llamativo, probablemente generará que el público se involucre con tu marca.
+                                Esta página será el primera pantallazo de los posibles clientes con nuestra marca, y su buena composición finalizará en suscripciones, consultas o ventas a favor de tu marca.</p>
+                            <input type="button" value="Quiero una landing page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorPadreContenedores">
+                <div class="contenedores">
+                    <div class="contenedoresFrente" style="background-image: url(img/shop.jpg);">
+                        <div class="bg"></div>
+                        <div class="cuerpoContenedoresFrente">
+                            <h1>Creemos un e-commerce al alcance de todo el mundo</h1>
+                        </div>
+                    </div>
+                    <div class="contenedorTrasero">
+                        <div class="cuerpoContenedorTrasero">
+                            <h1>E-commerce</h1>
+                            <p>Comprar o vender durante todo el día, algo que solo era posible sin descanso e incurriendo en enormes gastos, ahora es una posibilidad palpable a través de Internet. E-commerce, tu negocio estará abierto las 24 horas, dirigiéndose a un público específico con una comunicación que lo capte rápidamente, y pudiendo crear campañas de comunicación a bajo costo especializadas.</p>
+                            <input type="button" value="Quiero una tienda online">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
     <!--Fin Planes de la empresa-->
 
 <!---Incicio de pie de pagina-->

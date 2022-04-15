@@ -3,7 +3,6 @@
     padding: 0;
  }
 
-
  /*/////////////////////////////////////Estilos generales para todas nuestras paginas////////////////////////////////*/
 
 /*header de blog, contacto, nostros, servicios*/
@@ -49,44 +48,18 @@
 
 /*barra de navegacion para todas las paginas de nuestro sitio web*/
 
-
-.formulario{
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to bottom, #404040, #000000);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    box-shadow: 0px 0px 2px #808080;
-    float: right;
+.navbar{
+    background: linear-gradient(to bottom, #cecece, #ffffff, rgb(219, 215, 253));
+    color: #ffffff;
 }
 
-.formulario ul{
-    list-style: none;
-    text-decoration: none;
-    margin: 0px auto;
-    width: 500px;
-}
-
-.formulario ul img {
-    display: flex;
-    text-align: right;
-    margin: 0px auto;
-    width: 40px;
-}
-
-.formulario ul li{
-    display:inline;
-    line-height: 40px;
-    border-right: 1px solid #808080;
+.navbar-brand img{
+    width: 30px;
+    height: 30px;
+    margin: 0px;
 
 }
 
-.formulario ul li a{
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    text-decoration: none;
-} 
 /* Fin barra de navegacion*/
 
 /*//////////////////////////////////////Fin estilos generales para todas nuesras paginas///////////////////////////////////////////*/
@@ -95,209 +68,209 @@
 
 /*pagina principal,index.html, titulo y fondo imagen*/
 .CajaPrincipal {
-    height: 700px;
+    height: 900px;
     width: 100%;
-    background-image: url(img/Principal.jpg);
-    background-size: auto;
+    background: rgba(0, 0, 0, 0.7) url(img/paraindex2.jpg);
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
-.CajaPrincipal h1{
+.cajaTexto {
+    display: flexbox;
+    text-align: right;
+    padding: 100px;
     margin-left: 60%;
 }
-/* espacio de servicios index.html*/
 
-.cajaServicios{
-    width: 100%;
-    text-align:center;
-}
-
-.cajaServicios h2 {
-     margin-top: 60px;
-     margin-bottom: 60px;
-     font-size: 30px;
-    text-align:center;
-    color: #333;
-}
-
-.cajaServiciosSegunda {
-    display: inline-block;
-    text-align:center;
-    width: 350px;
-    height: 500px;
-    padding-left: 30px;
-    padding-right: 50px;
+.cajaTexto h1{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: #29aaff;
+    font-size: 55px;
+    margin-top: 60px;
 }
 
-.cajaServiciosSegunda img{
-    width: 300px;
-    height: 330px;
-    margin: 20px;
-    background-color:#700b0b;
+.cajaTexto p{
+    color: #ffffff;
+    font-size: large;
+    font-size: 18px;
+    margin-top: 30px;
 }
-
-.margenImg {
-    width: 360px;
-    height: 500px;
-    margin-bottom: 60px;
-    background-color: #700b0b;
-}
+ .cajaTexto a{
+     text-decoration: none;
+     color: #ffffff;
+ }
+/* espacio de servicios index.html*/
 
 /*fin caja de servicios*/
 
 /* espacio nuestro equipo inicio*/
 
-.cajaEquipo {
-    width: 100%;
-    display: inline-block;
-}
-.cajaEquipo h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    width: 100%;
-    height: 40px;
-    margin-top: 40px;
-
-}
-
-.cajaEquipoSecundaria{
-    display: inline-block;
-    text-align: center;
-    text-decoration: dashed;
-    width: 275px;
-    height: 350px;
-    margin: 50px;
-    margin-bottom: 20px solid #333;
-}
-
-.cajaEquipoSecundaria img{
-    width: 300px;
-    height: 200px;
-}
-
-.subrayadoImg {
-    width: 300px;
-    height: 20px;
-    background-color: #700b0b;
-}
-
  /*fin caja nuestro equipo*/
 
  /*estilos caja clientes*/
 
-.cajaClientes {
-    text-align: center;
-    text-decoration: dashed;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    background-color: white;
-    width: 100%;
-}
-.cajaClientes img {
-    height: 200px;
-    width: 370px;
-
-}
  /*fin caja de clientes*/
 
  /*////////////////////////////////////////////////////Fin index.html//////////////////////////////////////*/
 
 /*//////////////////////////////////////////////Inicio estilos servicios.html/////////////////////////////*/
 
- .gridPrincipal .principalDesarrollo {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 200px 200px;
-     grid-gap: 40px
- }
- .gridPrincipal .principalDesarrollo .primerDiv{
-    grid-column: 2/3;
-    padding: 10px ;
+.titulosEncabezados{
     text-align: center;
- }
- .gridPrincipal .principalDesarrollo .primerDiv h2{
-    text-align: center;
-    font-size: large;
-    font-size: 25px;
-    color: #700b0b;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 10px;
-    text-shadow: 0px 2px 1px #333;
- }
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
 
-.gridPrincipal .principalDesarrollo .segundoDiv {
-    grid-template-columns: 1/3;
-    grid-row: 2/3;
 }
-.gridPrincipal .principalDesarrollo .tercerDiv {
-    grid-template-columns: 2/3;
-    grid-row: 2/3;
+.contenedorContenedores{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.gridPrincipal .principalDesarrollo .cuartoDiv {
-    grid-template-columns: 3/3;
-    grid-row: 2/3;
+.contenedorPadreContenedores{
+    margin: 20px;
+    perspective: 1000px;
 }
+
+.contenedorPadreContenedores:hover .contenedores{
+    transform: rotateY(180deg);
+}
+
+
+.contenedores{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.contenedoresFrente{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contenedoresFrente,
+.contenedorTrasero{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.contenedorTrasero{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.cuerpoContenedoresFrente{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.cuerpoContenedorTrasero{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.cuerpoContenedorTrasero p{
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: justify;
+}
+
+.cuerpoContenedorTrasero input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.cuerpoContenedorTrasero input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+/*Fin de estilos para servicios.html*/
+
 
 /*///////////////////////////////////// Inicio estilos para nostros.html//////////////////////////////////*/
 
 .allNosotros {
-    padding: 40px 150px;
-    grid-template-rows: 300px, 300px, 300px;
-    
+  max-width: 1150px;
+  height: auto;
+  display: flex;
 }
 
 .allNosotros img{
-    width: 500px;
-    height: 350px;
+    width: 150px;
+    height: 200px;
 }
 
-.qienesSomosPrincipal{
-    display: flex;
-    padding: 100px;
-}
-.quienesSomosImg{
-   padding: 40px;
-}
 .subrayado {
     background-color: #333;
     padding: 2px 10px;
 }
-.quienesSomos { 
-padding: 40px;
-}
-.comoTrabajamosPrincipal{
-    display: flex;
-    padding: 100px;
+
+.quienesSomos{
+    padding: 80px;
 }
 
-.comoTrabajamosImg {
-    grid-row: 2/3;
+.marginInt { 
+    background-image: url(img/quienessomos.jpg);
+    background-size: 400px 500px;
+    background-repeat: no-repeat;
 }
 
 .comoTrabajamos{
-    grid-row: 2/3;
-}
-.porqueMarketingPrincipal{
-    display: flex;
-    padding: 100px;
+    background-image: url(img/comotrabajamos.jpg);
+    padding: 200px;
 }
 
-.porqueMarketingImg{
-    grid-row: 3/3;
-    padding: 40px;
-}
+
 .porqueMarketing{
-    grid-row: 3/3;
+    background-image: url(img/porquemarketing.jpg);
+    padding: 200px;
 }
 
 
@@ -430,10 +403,6 @@ padding: 40px;
     border: unset;
 }
 
-    
-
-
-
  /* inicio de footer para todas las paginas de nuestro sitio web*/
 
 footer{
@@ -508,7 +477,12 @@ footer img{
       .burger {
           display: none;
       }
-    
+      .cajaTexto {
+    display: flexbox;
+    text-align: right;
+    padding: 100px;
+    margin-left: 60%;
+}
 }
 @media (max-width: 600px) {
       .lista1{
@@ -516,7 +490,7 @@ footer img{
       }
       
       .menuu:checked   ~ul{
-        display:block;
+        display:inline-block;
       }
       
       .menuu {
@@ -526,7 +500,7 @@ footer img{
       .burger {
         color: white;
         box-sizing: border-box;
-        display:block;
+        display:inline-block;
         width: 40px;
         height: 40px;
         line-height: 40px;
@@ -553,7 +527,7 @@ footer img{
       
       .listas{
           width: 100%;
-        display: block;
+        display: inline;
         background: #700b0b;
         margin: 0;
         padding: 10px;
@@ -593,8 +567,7 @@ footer img{
             width: 100%;
             text-align: justify;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-
+            font-size: 16px;    
         }
 
     }
