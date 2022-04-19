@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>SevillaMD</title>
 </head>
-<body>
+<body >
    <!---Barra superior-->
    <!---Barra superior-->
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,7 +26,7 @@
             <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="galeria.html">Galeria</a>
+            <a class="nav-link" href="galeria.html">PORTAFOLIO</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,47 +43,38 @@
     </div>
   </nav>
 <!---fin barra superior-->
-
-<!--texto-->
-
-<div class="general">
-  <div class="principalContacto">
-    <div class="imagen">
-    <img src="img/Principal.jpg" alt="marketing">
-    </div>
-    <div class="mensaje">
-        <h2>Contacto</h2>
-         <p>Podemos otorgarle a tu negocio todas las herramientas necesarias para posicionarse.
-
-        Nos gustaría ser parte de tu equipo y realizar una labor en conjunto, nuestra intención es ir más allá de los vínculos laborales e implementar una visión de “socio-amigo” interiorizándonos en tu empresa para brindar el mejor servicio.
-        
-        Vamos a dedicarnos a tus preocupaciones y objetivos, trabajar arduamente y lograr resultados magníficos juntos</p>
-    </div>
-  </div>
-</div> 
-<!--Texto-->
+ <!--Triangulos-->
+ <div class="contenedorBackgroundTriangulo">
+  <div class="triangulo triangulo1"></div>
+  <div class="triangulo triangulo2"></div>
+  <div class="triangulo triangulo3"></div>
+</div>
 
 <!--Formulario de contacto para concretar venta-->
 
 <section class="contacto">
      <div class="contenedorContacto">
         <div class="tituloContacto">
-            <h2>Contactenos</h2>
-        </div>
-      <form action="contacto" class="formContacto">
-        <input type="text" name="Nombre" placeholder="Nombre" class="nombre"> 
-        <input type="email" name="Email" placeholder="Email" class="correoElectronico">
-        <input type="text" name="telefono" placeholder="Telefono" class="phone"> 
-        <select name="" id="" class="serviciosInteres">
-            <option value="" selected disabled>Servicio</option>
-            <option value="web">Diseño y desarrollo web</option>
-            <option value="social">social media y SEO</option>
-            <option value="visual">Comunicacion visual</option>
-        <textarea name="Comentarios" class="consultar" placeholder="Deja tu consulta"></textarea>
-        </select>
-        <input type="submit" name="Enviar" class="btn"> 
-        <input type="reset" name="borrar" class="rst">
-      </form>
+          <div class="container">
+            <div class="contactoContainer">
+              <div class="left">  
+                <h2 class="tituloContacto">Contacto</h2>
+                <p>Podemos otorgarle a tu negocio todas las herramientas necesarias para posicionarse.
+       
+               Nos gustaría ser parte de tu equipo y realizar una labor en conjunto, nuestra intención es ir más allá de los vínculos laborales e implementar una visión de “socio-amigo” interiorizándonos en tu empresa para brindar el mejor servicio.
+               
+               Vamos a dedicarnos a tus preocupaciones y objetivos, trabajar arduamente y lograr resultados magníficos juntos.</p>
+              </div>
+              <div class="right">
+                <h2 class="tituloContacto">Contactenos</h2>
+                <input type="text" class="field" placeholder="Nombre">
+                <input type="text" class="field" placeholder="Correo electronico">
+                <input type="text" class="field" placeholder="telefono">
+                <textarea placeholder="mensaje" class="field"></textarea>
+                <button class="btn">enviar</button>
+              </div>
+            </div>
+          </div>
      </div>
 </section>
 <!--fin formulario-->
@@ -104,5 +95,6 @@
  </div>
 </footer>
    <!---Fin de pie de pagina-->    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </body>
    </html>

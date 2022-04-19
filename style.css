@@ -4,52 +4,10 @@
  }
 
  /*/////////////////////////////////////Estilos generales para todas nuestras paginas////////////////////////////////*/
-
-/*header de blog, contacto, nostros, servicios*/
-
-.cabecera {
-    width: 100%;
-    height: 250px;
-    margin: 0px auto;
-}
-
-.cabecera a{
-    text-decoration: none;
-}
-
-.cabecera .logotipo {
-    margin: 0px auto;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.cabecera .logotipo img {
-    display: block;
-    text-align: center;
-    margin: 0px auto;
-    width: 140px;
-}
-
-.cabecera h1{
-    text-align: center;
-    font-size: large;
-    font-size: 40px;
-    color: #700b0b;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 10px;
-    text-shadow: 0px 2px 1px #333;
-}
-
-.cabecera h1 a {
-    color: #700b0b;
-}
-
 /*barra de navegacion para todas las paginas de nuestro sitio web*/
 
 .navbar{
-    background: linear-gradient(to bottom, #cecece, #ffffff, rgb(219, 215, 253));
+
     color: #ffffff;
 }
 
@@ -59,10 +17,89 @@
     margin: 0px;
 
 }
-
 /* Fin barra de navegacion*/
+/*Triangulos para todas las paginas*/
 
-/*//////////////////////////////////////Fin estilos generales para todas nuesras paginas///////////////////////////////////////////*/
+.contenedorBackgroundTriangulo{
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.triangulo{
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: absolute;
+}
+
+.triangulo1{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, #0ea1e6, #1e67c7);
+    right: 100px;
+    top: 100px;
+    animation: t1 8s ease infinite;
+}
+
+.triangulo2{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #ee8105, #c7371e);
+    top: 350px;
+    animation: t2 9s ease infinite;
+}
+
+.triangulo3{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    left: 200px;
+    animation: t3 7s ease infinite;
+}
+
+
+@media screen and (max-width:1200px) {
+    .contenedorCartas{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@keyframes t2 {
+    0%{
+        transform: rotate(65deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(65deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+/*fin triangulos para todas las paginas*/
+
+/*//////////////////////////////////////Fin estilos generales para todas nuestras paginas///////////////////////////////////////////*/
 
 /*////////////////////////////////////////////////////// INCIO DE INDEX.HTML//////////////////////////////////////////////////////*/
 
@@ -89,7 +126,7 @@
     color: white;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: #29aaff;
+    text-shadow: #700b0b;
     font-size: 55px;
     margin-top: 60px;
 }
@@ -104,6 +141,8 @@
      text-decoration: none;
      color: #ffffff;
  }
+
+
 /* espacio de servicios index.html*/
 
 /*fin caja de servicios*/
@@ -128,7 +167,20 @@
     width: 100%;
     height: 100px;
     margin-top: 30px;
+}
+.titulosEncabezados h2{
+    color: #700b0b;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: #333;
+    font-size: 55px;
+}
 
+.titulosEncabezados p{
+    color: #333;
+    font-size: large;
+    font-size: 18px;
+    margin-top: 30px;
 }
 .contenedorContenedores{
     max-width: 1200px;
@@ -204,26 +256,26 @@
 }
 
 .cuerpoContenedorTrasero{
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     transform: translateZ(60px);
 }
 
 .cuerpoContenedorTrasero p{
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 11px;
     text-align: justify;
 }
 
 .cuerpoContenedorTrasero input{
-    padding: 10px 40px;
+    padding: 8px 40px;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     border: none;
     color: white;
-    background: #58B0F6;
-    box-shadow: 1px 1px 30px -5px #58B0F6;
+    background: #700b0b;
+    box-shadow: 1px 1px 30px -5px #700b0b;
     border-radius: 10px;
     transition: box-shadow 600ms;
 }
@@ -236,171 +288,361 @@
 
 /*///////////////////////////////////// Inicio estilos para nostros.html//////////////////////////////////*/
 
-.allNosotros {
-  max-width: 1150px;
-  height: auto;
-  display: flex;
-}
+/*Estilos generales*/
 
-.allNosotros img{
-    width: 150px;
-    height: 200px;
-}
-
-.subrayado {
+.bodyUnico{
     background-color: #333;
-    padding: 2px 10px;
 }
-
-.quienesSomos{
-    padding: 80px;
-}
-
-.marginInt { 
-    background-image: url(img/quienessomos.jpg);
-    background-size: 400px 500px;
-    background-repeat: no-repeat;
-}
-
-.comoTrabajamos{
-    background-image: url(img/comotrabajamos.jpg);
-    padding: 200px;
+.contenedorGeneral{
+    width: 800px;
+    height: 700px;
 }
 
 
-.porqueMarketing{
-    background-image: url(img/porquemarketing.jpg);
-    padding: 200px;
+.contenedorCartas{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.cartas{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.cartas:hover{
+    transform: translateY(-10px);
+}
+
+.cartas:hover .coverCartas img{
+    transform: scale(1.1);
+}
+
+.coverCartas{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.coverCartas img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.cartas h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.cartas p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.cartas hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+
+.footerCartas{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footerCartas h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .contenedorCartas{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/*footer unico para pagina de nostros*/
+.footerNosotros{
+    height: 80px;
+    background-color: #333;
+    display: grid;
+    grid-area: inherit;
+}
+
+.footerNosotros img{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    background-color: #fff;
+}
+
+.socialNosotros{
+    text-align: end;
+    margin-right: 43%;
+}
+
+.fixNosotros {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+}
+
+.copyrightNosotros {
+    background-color: #333;
+    text-align: center;
+    color: white;
+}
+/*Media quires sobre nosotros*/
+
+
+@media screen and (max-width:1200px) {
+    .contenedorCartas{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 880px){
+    .contenedorGeneral{
+        width: 400px;
+        height: auto;
+    }
+    
+} 
+
+/*//////////////////////Fin Nosotros.html///////////////////////*/
+
+
+  /*////////Inicio para galeria////////////////////////////////*/
+
+
+  .displayGaleria{
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+      grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  }
+  .carousel{
+      width: 750px;
+      height: 420px;
+      grid-column: 1/4, 2/4;
+      grid-row: 1/4;
+  }
+
+  .carousel img{
+      border-radius: 10%;
+  }
+
+  .cajaTexte {
+    
+    padding: 40px;
+    grid-column: 3/4, 4/4;
+    grid-row: 2/4;
+  }
+
+  .cajaTexte h1{
+    color: #700b0b;
+    text-align: right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: #333;
+    font-size: 55px;
+  }
+
+  .cajaTexte{ 
+  text-align: right;
+  color: #333;
+  font-size: large;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.cajaTexte a{
+   text-decoration: none;
+   color: #ffffff;
+}
+ /*Media quires*/
+
+ @media (max-width= 800px) {
+    .displayGaleria {
+        
+    }
+
+ }
+
+/*Fin Galeria*/
 
 
 
 
 /*///////////////////////////////////// Inicio estilos para contacto.html//////////////////////////////////*/
 
-
-.general {
-    display: grid;
-    grid-template-columns: 450px, 450px;
-    grid-gap: 40px;
-    padding: 40px;
-
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+    
 }
 
-.principalContacto{
-    display: flex;
-    padding: 40px;
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contactoContainer{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    width: 850px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
 }
 
-.imagen img{
-    width: 98%;
-}
-
-.imagen{
-    width: 60%;
-    text-align: center;
-    margin-right: 20px;
-}
-
-.mensaje h2{
-    padding: 40px;
-    text-align: center;
-    font-size: large;
-    font-size: 24px;
-    color: #700b0b;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 10px;
-    text-shadow: 0px 2px 1px #333;
-}
-
-
-.mensaje {
-    grid-column: 2/2;
-    width: 40%;
-    text-align: justify;
-    letter-spacing: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:larger;
-    font-size: 20px;
-    margin-left: 20px;
-}
-.tituloContacto{
-    text-align: center;
-    font-size: large;
-    font-size: 24px;
-    color: #700b0b;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 10px;
-}
-
-.contacto {
-    background: #c1c1c1;
-    padding: 50px 0;
-}
-
-
-.contacto .contenedorContacto .formContacto{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /*responsive*/
-    padding: 60px;
-}
-
-.contacto .contenedorContacto .nombre, .correoElectronico, .phone, .serviciosInteres, .consultar{
-    background: none;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #333;
-    padding: 15px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+.left{
     color: #333;
-    transition: all 240ms ease;
-    margin-bottom: 20px;
-}
-
-.contacto .nombre, .correoElectronico, .phone, .serviciosInteres{
-    width: 46%;
-    margin-bottom: 20px;
-}
-
-.contacto .serviciosInteres{
-    width: 49%;
-}
-
-.contacto .consultar{
-    width: 96%;
-    max-width: 96%;
-    min-width: 96%;
-    min-height: 100px;
-    max-height: 300px;
-}
-
-.contacto .nombre:focus, .serviciosInteres:focus, .correoElectronico:focus, .phone:focus, .consultar:focus{
-    border-bottom: 3px solid #700b0b;
-}
-
-.contacto .btn, .rst{
-    margin: auto;
     text-align: center;
-    padding: 15px 25px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    border:none;
-    background: none;
-    background-color: #700b0b;
-    color: white;
-    border-radius: 10%;
-    cursor: pointer;
 }
-.contacto .btn:hover, .rst:hover {
-    background-color: #410303;
-    border: unset;
+
+.left p{
+    text-align: justify;
+    font-size: larger;
+}
+
+.left h1, p{
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+
+.right{
+	padding: 25px 40px;
+}
+
+.tituloContacto{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.tituloContacto:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #700b0b;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #700b0b;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #700b0b;
+}
+
+.field:focus{
+    border: 2px solid #700b0b;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contactoContainer{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: auto;
+        font-size: 10px;
+	}
+    .container{
+        padding: 15px 0px;
+    }
+
+    .contactoContainer{
+        padding: 0px 15px;
+    }
+
 }
 
  /* inicio de footer para todas las paginas de nuestro sitio web*/
@@ -572,4 +814,4 @@ footer img{
 
     }
 
-/*Fin contacto.html responsive*/    
+/*Fin contacto.html responsive*/ 
