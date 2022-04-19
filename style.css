@@ -143,18 +143,6 @@
  }
 
 
-/* espacio de servicios index.html*/
-
-/*fin caja de servicios*/
-
-/* espacio nuestro equipo inicio*/
-
- /*fin caja nuestro equipo*/
-
- /*estilos caja clientes*/
-
- /*fin caja de clientes*/
-
  /*////////////////////////////////////////////////////Fin index.html//////////////////////////////////////*/
 
 /*//////////////////////////////////////////////Inicio estilos servicios.html/////////////////////////////*/
@@ -283,7 +271,7 @@
 .cuerpoContenedorTrasero input:hover{
     box-shadow: 1px 1px 30px 0px #449de6;
 }
-/*Fin de estilos para servicios.html*/
+/*////////////////////////////Fin de estilos para servicios.html///////////////////////////////////////*/
 
 
 /*///////////////////////////////////// Inicio estilos para nostros.html//////////////////////////////////*/
@@ -495,14 +483,7 @@
 }
  /*Media quires*/
 
- @media (max-width= 800px) {
-    .displayGaleria {
-        
-    }
-
- }
-
-/*Fin Galeria*/
+/*/////////////////////Fin Galeria//////////////////////////*/
 
 
 
@@ -626,6 +607,7 @@ textarea{
     border: 2px solid #700b0b;
     background-color: #fff;
 }
+/*Media queris contacto*/
 
 @media screen and (max-width: 880px){
 	.contactoContainer{
@@ -709,109 +691,3 @@ footer img{
 
 /* fin de footer*/
 
-/*//////////////////////////////Inicio responsive/////////////////////*/
-
-/*menu de navegacion*/
-@media (min-width: 600px) {
-    .menuu {
-        display: none;
-      }
-      .burger {
-          display: none;
-      }
-      .cajaTexto {
-    display: flexbox;
-    text-align: right;
-    padding: 100px;
-    margin-left: 60%;
-}
-}
-@media (max-width: 600px) {
-      .lista1{
-        display:none;
-      }
-      
-      .menuu:checked   ~ul{
-        display:inline-block;
-      }
-      
-      .menuu {
-        display: none;
-      }
-      
-      .burger {
-        color: white;
-        box-sizing: border-box;
-        display:inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-weight: bold;
-        text-align:right;
-        user-select: none;
-      }
-      .burger:hover{
-        transform: scale(1.5);
-        transition: 2s;
-        cursor: pointer;
-      }
-      
-       .menuu:checked  label {
-        background: lightgrey;
-      }
-      
-      .lista1{
-        margin-top:0;
-        padding: 0;
-        width: 100%;
-      }
-      
-      
-      .listas{
-          width: 100%;
-        display: inline;
-        background: #700b0b;
-        margin: 0;
-        padding: 10px;
-        list-style: none;
-        border-bottom: 1px solid grey;
-      }
-      
-      .listas:hover {
-        filter: brightness(110%);
-      }
-    }
-/* inicio contacto.html responsive */
-
-
-    @media (max-width: 800px) {
-
-        .general {
-            display: grid;
-            grid-template-rows: 100%  100%;
-        }
-
-        .principalContacto {
-            display:block;
-        }
-
-        .imagen {
-            width: 100%;
-            grid-row: 1/2;
-        }
-
-        .imagen img {
-            width: 100%;
-        }
-
-        .mensaje{
-            grid-row: 2/2;
-            width: 100%;
-            text-align: justify;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;    
-        }
-
-    }
-
-/*Fin contacto.html responsive*/ 
